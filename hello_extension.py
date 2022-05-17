@@ -32,7 +32,7 @@ class HelloExtension(inkex.EffectExtension):
     def effect(self):
         for elem in self.svg.selection:
             elem.style['fill'] = 'red'
-            elem.style['fill-opacity'] = 1
+            elem.style['fill-opacity'] = 0.5
             elem.style['opacity'] = 1
 
 if __name__ == '__main__':
